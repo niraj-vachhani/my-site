@@ -25,7 +25,7 @@ header img {
   border-radius: 50%;
   margin-bottom: 1rem;
   border: 5px solid white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 header h1 {
@@ -45,7 +45,7 @@ header p {
   background: #fff;
   margin-top: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .section h2 {
@@ -83,12 +83,6 @@ header p {
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
-  transition: background 0.3s ease;
-}
-
-.skill:hover {
-  background: #005ecb;
-  cursor: default;
 }
 
 /* Footer */
@@ -103,16 +97,10 @@ footer {
 a {
   color: #fff;
   text-decoration: underline;
-  transition: all 0.3s ease;
-}
-
-footer a:hover {
-  text-decoration: none;
-  opacity: 0.9;
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media(max-width: 600px) {
   header h1 {
     font-size: 2rem;
   }
@@ -120,9 +108,5 @@ footer a:hover {
   .skills {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .section {
-    padding: 2rem 1rem;
   }
 }
