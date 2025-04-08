@@ -84,6 +84,73 @@ header p {
   border-radius: 20px;
   font-size: 0.9rem;
 }
+.certificates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.cert-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.cert-logo-box {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f4ff;
+}
+
+.cert-logo-box img {
+  max-height: 80px;
+  max-width: 80%;
+  object-fit: contain;
+}
+
+.cert-content {
+  padding: 1rem;
+}
+
+.cert-content h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.cert-content small {
+  color: #666;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.cert-content a {
+  display: inline-block;
+  color: #0072ff;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #0072ff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.cert-content a:hover {
+  background-color: #0072ff;
+  color: white;
+}
 
 /* Footer */
 footer {
